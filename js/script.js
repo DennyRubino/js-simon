@@ -69,7 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
     startCountdown();})
   
   
-
+//AGGIUNGO UN CONTROLLO SUI NUMERI//
+function checkNumbers() {
+    const userNumbers = Array.from(inputNumb.querySelectorAll("input"))
+      .map((input) => parseInt(input.value, 10))
+      .filter((value) => !isNaN(value));
+    const guessedNumbers = randomNumbers.filter((num) =>
+      userNumbers.includes(num)
+    );
+    showResult.textContent = `Hai indovinato ${guessedNumbers.length} numeri! (${guessedNumbers.join(" ")})`;
+  }
+  submitBtn.addEventListener("click", checkNumbers);
   
   
   

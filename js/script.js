@@ -9,16 +9,21 @@
 //Individuate gli elementi di cui avete bisogno per realizzare il programma.
 //Immaginate la logica come fosse uno snack: "Dati 2 array di numeri, indica quali e quanti numeri ci sono in comune tra i due array
 
-    const displayCount = document.getElementById("timer");
+
+//ID'S//
+const displayCount = document.getElementById("timer");
+const displayIntruction = document.getElementById("instructions")
+const displayNumbers = document.getElementById("numbers")
+const inputContainerNumb = document.getElementById("inputs-container")
+const inputNumb = document.getElementById("inputs")
+const submitBtn = document.getElementById("submit-button")
+const showResult = document.getElementById("result")
+
+
+
+
      
-    let seconds = 10;
-
-    const intervalID = setInterval(() => {
-        displayCount.innerHTML = seconds;
-
-        seconds--;
-    }, 1000)
-
+    
 
 
 

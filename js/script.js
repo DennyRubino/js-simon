@@ -51,6 +51,24 @@ function startCountdown() {
     }, 1000);
   }
   
+  //CREO UNA FUNZIONE PER FAR COMPARIRE GLI INPUT PER I NUMERI DATI//
+function showInputs() {
+    inputContainerNumb.style.display = "block";
+    inputNumb.innerHTML = ""; 
+  
+    for (let i = 0; i < 5; i++) {
+      const input = document.createElement("input");
+      input.type = "number";
+      input.classList.add("number-input");
+      inputNumb.appendChild(input);
+    }
+  }
+  //AVVIO IL GIOCO AL CARICAMENTO//
+document.addEventListener("DOMContentLoaded", () => {
+    generateRandomNumbers();
+    startCountdown();})
+  
+  
 
   
   

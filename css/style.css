@@ -1,0 +1,17 @@
+/* styles.css */
+body {
+    text-align: center;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+
+ 
+  

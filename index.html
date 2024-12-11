@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>  
-<h1></h1>
-
-
-
-<script src="js/script.js"></script>
+<body>
+  <div>
+    <h1 id="timer">10</h1>
+    <p id="instructions">Memorizza i numeri mostrati qui sotto:</p>
+    <div id="numbers" class="numbers"></div>
+    <div id="inputs-container">
+      <p>Inserisci tutti i numeri che ricordi (l'ordine non è importante):</p>
+      <div id="inputs"></div>
+      <button id="submit-button">Conferma</button>
+    </div>
+    <p id="result"></p>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

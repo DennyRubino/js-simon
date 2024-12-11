@@ -35,6 +35,25 @@ function generateRandomNumbers() {
     }
   }
 
+//CREO UNA FUNZIONE PER IL COUNTDOWN//
+function startCountdown() {
+    const countdown = setInterval(() => {
+      timer--;
+      displayCount.textContent = timer;
+  
+      if (timer === 0) {
+        clearInterval(countdown);
+        displayIntruction.textContent =
+          "Inserisci tutti i numeri che ricordi (l'ordine non è importante):";
+        displayNumbers.textContent = ""; 
+        showInputs();
+      }
+    }, 1000);
+  }
+  
+
+  
+  
   
   
 

@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     text-align: center;
     color: #333;
@@ -18,5 +18,11 @@ body {
     color: black;
   }
   
- 
+  .number-input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    
+  }
   

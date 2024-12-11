@@ -19,7 +19,24 @@ const inputNumb = document.getElementById("inputs")
 const submitBtn = document.getElementById("submit-button")
 const showResult = document.getElementById("result")
 
+let randomNumbers = [];
+let timer = 2;
 
+//CREO UN GENERATORE DI NUMERO RANDOMICO//
+function generateRandomNumbers() {
+    randomNumbers = [];
+    displayNumbers.innerHTML = ""; 
+  
+    for (let i = 0; i < 5; i++) {
+      const randomNum = Math.floor(Math.random() * 100) + 1;
+      randomNumbers.push(randomNum);
+  
+      displayNumbers.textContent = randomNumbers.join(" ");
+    }
+  }
+
+  
+  
 
 
      
